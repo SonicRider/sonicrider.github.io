@@ -1,3 +1,31 @@
 body {
-    background: paleturquoise;
+    background: beige;
 }
+.work-progress {
+    font-size: 2rem;
+    color: blueviolet;
+  }
+  
+  .work-progress .dots span {
+    animation: blink 1.5s infinite;
+  }
+  
+  .work-progress .dots span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .work-progress .dots span:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes blink {
+    0%, 20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
