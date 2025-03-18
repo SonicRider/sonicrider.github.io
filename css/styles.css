@@ -59,9 +59,15 @@ footer a:hover {
 .home {
   background: url(../images/bg-home-office-studio.jpg) no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 .home .content-wrapper {
+  flex: 1 0 auto;
+}
+.content-bg {
   background: rgb(255 255 255 / 0.9);
+  padding: 30px;
 }
 
 /* RESUME
@@ -110,7 +116,10 @@ footer a:hover {
 -------------------------------*/
 footer {
   background: #222222;
-  color: #d3d4d6
+  color: #d3d4d6;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .socials {
   list-style-type: none;
@@ -118,9 +127,13 @@ footer {
 }
 .socials li {
   display: inline-block;
+  margin-left: 10px;
 }
 .socials img {
   width: 32px;
+}
+.socials img:hover {
+  opacity: 0.5;
 }
 
 
