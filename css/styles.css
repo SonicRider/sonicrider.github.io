@@ -1,24 +1,113 @@
-body {
-    background: beige;
+/*
+COLOR PALETTE
+
+Dark green #3c8453
+Sandy beige #bcaa96
+Dark gray #222222
+light gray #d3d4d6
+off-white #f7f7f7
+*/
+
+/* GLOBAL STYLES 
+-------------------------------*/
+/* Box Sizing 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/*/
+html {
+  box-sizing: border-box;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+/* links */
+a {
+  color: #3c8453;
+}
+a:hover {
+  color: #bcaa96;
+  text-decoration: none;
+}
+
+footer a {
+  color: #bcaa96;
+}
+footer a:hover {
+  color: #3c8453;
+}
+
+.btn {
+  background: #3c8453;
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+/* HOME
+-------------------------------*/
+.home {
+  background: url(../images/bg-home-office-studio.jpg) no-repeat;
+  background-size: cover;
+}
+.home .content-wrapper {
+  background: rgb(255 255 255 / 0.9);
+}
+
+/* RESUME
+-------------------------------*/
+
+/* Profile
+-------------------------------*/
+
+/* Projects
+-------------------------------*/
+
+/* Work Experience
+-------------------------------*/
+
+/* Education
+-------------------------------*/
+
+
+/* FOOTER
+-------------------------------*/
+footer {
+  background: #222222;
+  color: #d3d4d6
+}
+.socials {
+  list-style-type: none;
+  padding: 0;
+}
+.socials li {
+  display: inline-block;
+}
+.socials img {
+  width: 32px;
+}
+
+
+/* Work In Progress */
 .work-progress {
     font-size: 2rem;
     color: blueviolet;
   }
   
-  .work-progress .dots span {
+.work-progress .dots span {
     animation: blink 1.5s infinite;
   }
   
-  .work-progress .dots span:nth-child(2) {
+.work-progress .dots span:nth-child(2) {
     animation-delay: 0.3s;
   }
   
-  .work-progress .dots span:nth-child(3) {
+.work-progress .dots span:nth-child(3) {
     animation-delay: 0.6s;
   }
   
-  @keyframes blink {
+@keyframes blink {
     0%, 20% {
       opacity: 0;
     }
