@@ -95,6 +95,14 @@ footer a:hover {
   background: rgb(255 255 255 / 0.9);
   padding: 30px;
 }
+@media screen and (max-width: 650px) {
+  .home .content-wrapper {
+    padding: 10px;
+  }
+  .content-bg {
+    padding: 20px;
+  }
+}
 
 /* RESUME
 -------------------------------*/
@@ -117,9 +125,20 @@ footer a:hover {
   left: 5px;
   font-size: 1.5rem;
 }
-@media screen and (max-width=1200px) {
+@media screen and (max-width: 1200px) {
   .download-link {
     position: absolute;
+  }
+}
+@media screen and (max-width: 500px){
+  .resume header::before {
+    height: 200px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 2.6rem;
   }
 }
 /* Profile
@@ -191,9 +210,6 @@ footer a:hover {
 footer {
   background: #222222;
   color: #d3d4d6;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
 }
 .socials {
   list-style-type: none;
@@ -208,4 +224,18 @@ footer {
 }
 .socials img:hover {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 550px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  } 
+}
+@media screen and (max-width:549.5px) {
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
 }
