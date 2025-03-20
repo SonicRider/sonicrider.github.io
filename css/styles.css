@@ -89,7 +89,7 @@ footer a:hover {
   flex-direction: column;
 }
 .home .content-wrapper {
-  flex: 1 0 auto;
+  /* flex: 1 0 auto; */
 }
 .content-bg {
   background: rgb(255 255 255 / 0.9);
@@ -247,7 +247,10 @@ footer {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .photo {
