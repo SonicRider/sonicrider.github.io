@@ -241,9 +241,9 @@ footer {
 
 
 .photo-reel-container {
-    border: 1px solid;
-    padding: 20px;
-    background-color: bisque;
+    /* border: 1px solid; */
+    /* padding: 20px; */
+    /* background-color: bisque; */
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -252,18 +252,20 @@ footer {
 
 .photo {
     border: 1px solid black;
-    background-color: aliceblue;
+    background: aliceblue;
     width: 200px; /* Adjust image size */
     height: 200px;
-    margin: 0 10px;
+    margin: 0 15px;
     flex-shrink: 0;
     border-radius: 10px;
-    opacity: 1;
 }
 .photo-reel {
     display: flex;
     width: calc(100% * 2); /* Allow smooth looping */
     animation: scroll 21s linear infinite;
+    background: rgb(255 255 255 / 0.9);
+    height: 260px;
+    align-items: center;
 }
 @keyframes scroll {
     from {
