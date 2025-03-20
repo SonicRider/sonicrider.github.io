@@ -142,8 +142,6 @@ footer a:hover {
     font-size: 2.6rem;
   }
 }
-/* Profile
--------------------------------*/
 
 /* Projects
 -------------------------------*/
@@ -239,4 +237,39 @@ footer {
     text-align: center;
     padding: 10px;
   }
+}
+
+
+.photo-reel-container {
+    border: 1px solid;
+    padding: 20px;
+    background-color: bisque;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.photo {
+    border: 1px solid black;
+    background-color: aliceblue;
+    width: 200px; /* Adjust image size */
+    height: 200px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    opacity: 1;
+}
+.photo-reel {
+    display: flex;
+    width: calc(100% * 2); /* Allow smooth looping */
+    animation: scroll 21s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
